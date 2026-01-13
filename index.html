@@ -1,0 +1,895 @@
+<!doctype html>
+<html
+  lang="en"
+  data-ws-project="55ecce4c-3e3e-4b24-bfb0-0a8a2efd85cb"
+  data-ws-last-published="2026-01-13T10:40:43.807Z"
+>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/static/app_generated_index-6937cd5a.r0bP98iM.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:url" content="https://url/" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:type" content="website" />
+    <title>Home</title>
+  </head>
+  <body class="w-element c80etzr">
+    <div class="w-html-embed">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          -webkit-font-smoothing: antialiased;
+          background: #ffffff;
+          color: #000000;
+          transition: all 0.3s;
+        }
+
+        body.dark {
+          background: #000000;
+          color: #ffffff;
+        }
+
+        header {
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 50;
+          background: rgba(255, 255, 255, 0.8);
+          backdrop-filter: blur(12px);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        body.dark header {
+          background: rgba(0, 0, 0, 0.8);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-content {
+          padding: 0 24px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .logo {
+          font-weight: 800;
+          font-size: 20px;
+          letter-spacing: -0.05em;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+        }
+
+        .logo-bar {
+          width: 8px;
+          height: 24px;
+          background: #ff2800;
+        }
+
+        .nav-links {
+          display: flex;
+          gap: 32px;
+          align-items: center;
+        }
+
+        .nav-links a {
+          color: inherit;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+          color: #ff2800;
+        }
+
+        .icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .icon-menu {
+          width: 24px;
+          height: 20px;
+          position: relative;
+        }
+
+        .icon-menu::before,
+        .icon-menu::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background: currentColor;
+          left: 0;
+        }
+
+        .icon-menu::before {
+          top: 0;
+          box-shadow: 0 8px 0 currentColor;
+        }
+
+        .icon-menu::after {
+          bottom: 0;
+        }
+
+        .icon-arrow {
+          width: 20px;
+          height: 20px;
+          border-top: 3px solid currentColor;
+          border-right: 3px solid currentColor;
+          transform: rotate(45deg);
+          position: relative;
+        }
+
+        .icon-arrow::before {
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 3px;
+          background: currentColor;
+          right: -2px;
+          top: 7px;
+          transform: rotate(-45deg);
+        }
+
+        .icon-megaphone {
+          width: 36px;
+          height: 36px;
+          border: 3px solid currentColor;
+          border-radius: 0 50% 50% 0;
+          position: relative;
+        }
+
+        .icon-megaphone::before {
+          content: "";
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          border: 3px solid currentColor;
+          border-radius: 50%;
+          right: -8px;
+          top: 7px;
+        }
+
+        .icon-megaphone::after {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 20px;
+          background: currentColor;
+          left: -8px;
+          top: 5px;
+          clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 20%);
+        }
+
+        .icon-laptop {
+          width: 40px;
+          height: 28px;
+          border: 3px solid currentColor;
+          border-radius: 2px;
+          position: relative;
+        }
+
+        .icon-laptop::before {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 3px;
+          background: currentColor;
+          bottom: -8px;
+          left: -8px;
+        }
+
+        .icon-laptop::after {
+          content: "";
+          position: absolute;
+          width: 24px;
+          height: 18px;
+          border: 2px solid currentColor;
+          top: 3px;
+          left: 5px;
+        }
+
+        .icon-briefcase {
+          width: 36px;
+          height: 28px;
+          border: 3px solid currentColor;
+          border-radius: 2px;
+          position: relative;
+        }
+
+        .icon-briefcase::before {
+          content: "";
+          position: absolute;
+          width: 16px;
+          height: 8px;
+          border: 3px solid currentColor;
+          border-bottom: none;
+          top: -11px;
+          left: 7px;
+          border-radius: 4px 4px 0 0;
+        }
+
+        .icon-briefcase::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background: currentColor;
+          top: 10px;
+          left: 0;
+        }
+
+        .icon-contrast {
+          width: 24px;
+          height: 24px;
+          border: 3px solid currentColor;
+          border-radius: 50%;
+          position: relative;
+          background: linear-gradient(90deg, currentColor 50%, transparent 50%);
+        }
+
+        .menu-btn {
+          display: none;
+          padding: 8px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: inherit;
+        }
+
+        @media (max-width: 768px) {
+          .nav-links {
+            display: none;
+          }
+
+          .menu-btn {
+            display: block;
+          }
+        }
+
+        main {
+          padding-top: 64px;
+        }
+
+        .hero-section {
+          padding: 48px 24px 80px;
+        }
+
+        .badge {
+          display: inline-block;
+          padding: 4px 12px;
+          border: 1px solid #000000;
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+        }
+
+        body.dark .badge {
+          border-color: #ffffff;
+        }
+
+        h1 {
+          font-size: 64px;
+          font-weight: 800;
+          line-height: 0.9;
+          letter-spacing: -0.05em;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+        }
+
+        .primary-text {
+          color: #ff2800;
+        }
+
+        .hero-description {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 1.4;
+          opacity: 0.7;
+          margin-bottom: 32px;
+        }
+
+        .cta-button {
+          width: 100%;
+          background: #ff2800;
+          color: #ffffff;
+          font-weight: 700;
+          padding: 20px;
+          font-size: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          border: none;
+          cursor: pointer;
+          transition: opacity 0.3s;
+        }
+
+        .cta-button:hover {
+          opacity: 0.9;
+        }
+
+        .stats-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+          margin-top: 32px;
+        }
+
+        .stat-item {
+          border-left: 2px solid #ff2800;
+          padding-left: 16px;
+        }
+
+        .stat-number {
+          font-size: 24px;
+          font-weight: 800;
+        }
+
+        .stat-label {
+          font-size: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          opacity: 0.5;
+        }
+
+        .solutions-section {
+          background: #000000;
+          color: #ffffff;
+          padding: 80px 24px;
+        }
+
+        body.dark .solutions-section {
+          background: #ffffff;
+          color: #000000;
+        }
+
+        .section-title {
+          font-size: 48px;
+          font-weight: 800;
+          letter-spacing: -0.05em;
+          text-transform: uppercase;
+          line-height: 1;
+          margin-bottom: 16px;
+        }
+
+        .title-underline {
+          width: 48px;
+          height: 4px;
+          background: #ff2800;
+          margin-bottom: 48px;
+        }
+
+        .solutions-grid {
+          display: grid;
+          gap: 1px;
+        }
+
+        .solution-card {
+          background: #171717;
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          transition: all 0.3s;
+          border: 1px solid transparent;
+        }
+
+        body.dark .solution-card {
+          background: #f5f5f5;
+        }
+
+        .solution-card:hover {
+          border-color: rgba(255, 40, 0, 0.5);
+        }
+
+        .solution-icon {
+          font-size: 36px;
+          color: #ff2800;
+        }
+
+        .solution-title {
+          font-size: 20px;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+
+        .solution-description {
+          font-size: 14px;
+          opacity: 0.6;
+          line-height: 1.6;
+        }
+
+        .cta-section {
+          padding: 96px 24px;
+          background: #ff2800;
+          color: #ffffff;
+          text-align: center;
+        }
+
+        .cta-content {
+          max-width: 384px;
+          margin: 0 auto;
+        }
+
+        .cta-title {
+          font-size: 56px;
+          font-weight: 800;
+          letter-spacing: -0.05em;
+          text-transform: uppercase;
+          line-height: 0.9;
+          margin-bottom: 32px;
+        }
+
+        .cta-description {
+          font-weight: 500;
+          opacity: 0.9;
+          margin-bottom: 32px;
+        }
+
+        .cta-buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          margin-top: 32px;
+        }
+
+        .btn-primary {
+          background: #000000;
+          color: #ffffff;
+          font-weight: 700;
+          padding: 20px;
+          font-size: 14px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer;
+          transition: transform 0.3s;
+        }
+
+        body.dark .btn-primary {
+          background: #ffffff;
+          color: #000000;
+        }
+
+        .btn-primary:hover {
+          transform: scale(1.05);
+        }
+
+        .btn-secondary {
+          border: 2px solid #ffffff;
+          background: transparent;
+          color: #ffffff;
+          font-weight: 700;
+          padding: 20px;
+          font-size: 14px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+          background: #ffffff;
+          color: #ff2800;
+        }
+
+        .contact-section {
+          padding: 96px 24px;
+          background: #f5f5f5;
+        }
+
+        body.dark .contact-section {
+          background: #0a0a0a;
+        }
+
+        .contact-container {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+
+        .contact-title {
+          font-size: 48px;
+          font-weight: 800;
+          letter-spacing: -0.05em;
+          text-transform: uppercase;
+          line-height: 1;
+          margin-bottom: 16px;
+        }
+
+        .contact-description {
+          font-size: 16px;
+          opacity: 0.7;
+          margin-bottom: 48px;
+        }
+
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .form-label {
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+        }
+
+        .form-input,
+        .form-textarea {
+          padding: 16px;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          color: #000000;
+          transition: border-color 0.3s;
+        }
+
+        body.dark .form-input,
+        body.dark .form-textarea {
+          background: #000000;
+          color: #ffffff;
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+          outline: none;
+          border-color: #ff2800;
+        }
+
+        .form-textarea {
+          min-height: 150px;
+          resize: vertical;
+        }
+
+        .form-submit {
+          background: #ff2800;
+          color: #ffffff;
+          font-weight: 700;
+          padding: 20px;
+          font-size: 14px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer;
+          transition: opacity 0.3s;
+        }
+
+        .form-submit:hover {
+          opacity: 0.9;
+        }
+
+        footer {
+          padding: 48px 24px;
+          border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        body.dark footer {
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 32px;
+        }
+
+        .footer-links {
+          display: flex;
+          gap: 24px;
+          font-size: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          opacity: 0.6;
+        }
+
+        .footer-links a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .footer-copyright {
+          font-size: 10px;
+          font-weight: 500;
+          opacity: 0.4;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+        }
+
+        .theme-toggle {
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          z-index: 50;
+          width: 48px;
+          height: 48px;
+          background: #000000;
+          color: #ffffff;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow:
+            0 20px 25px -5px rgba(0, 0, 0, 0.1),
+            0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        body.dark .theme-toggle {
+          background: #ffffff;
+          color: #000000;
+        }
+      </style>
+    </div>
+    <header class="w-element">
+      <div class="w-element header-content">
+        <div class="w-element logo">
+          <span class="w-element"
+            ><img
+              alt=""
+              width="160"
+              height="128"
+              src="/assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg"
+              class="w-image"
+              sizes="100vw"
+              srcset="
+                /assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg  16w,
+                /assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg  32w,
+                /assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg  48w,
+                /assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg  64w,
+                /assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg  96w,
+                /assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg 128w,
+                /assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg 256w,
+                /assets/aqvalta_RdaBqjKkLIV_LIJdoSrqF.svg 384w
+              "
+              decoding="async"
+              loading="lazy"
+          /></span>
+        </div>
+        <nav class="w-element nav-links">
+          <a href="#services" class="w-element">Services</a>
+          <a href="#work" class="w-element">Our Work</a>
+          <a href="#contact" class="w-element">Contact</a>
+        </nav>
+        <button class="w-element menu-btn">
+          <span class="w-element icon icon-menu"></span>
+        </button>
+      </div>
+    </header>
+    <main class="w-element">
+      <section class="w-element ca1vohs hero-section">
+        <div
+          class="w-element c12jyw6q c10odpz7 c14ueudn c1avf770 cdiydw0 badge"
+        >
+          we are a tiny team, seasoned by experience.
+        </div>
+        <h1 class="w-element">
+          <span class="w-element c1hz7wxj c6pfrmt"
+            >IdentiEmpowering
+            <i class="w-element"><sub class="w-element">small</sub></i>
+            businesses<br />to make <sup class="w-element">big</sup
+            ><b class="w-element"
+              ><i class="w-element"><sup class="w-element"> </sup></i></b></span
+          ><br class="w-element" /><span class="w-element primary-text"
+            ><i class="w-element">waves</i>.</span
+          ><br class="w-element" />
+        </h1>
+        <p class="w-element hero-description">
+          We’ve worked for some of the biggest names out there, and we choose a
+          thoughtful approach - letting our work speak for itself rather than
+          parading client logos, and focusing on outcomes over stacking brand
+          names...
+        </p>
+        <div class="w-element stats-grid">
+          <div class="w-element stat-item">
+            <div class="w-element stat-number">10+</div>
+            <div class="w-element stat-label">years of experience</div>
+          </div>
+          <div class="w-element stat-item">
+            <div class="w-element stat-number">250k+</div>
+            <div class="w-element stat-label">Verified Users</div>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="w-element solutions-section">
+        <div class="w-element section-title">Services</div>
+        <div class="w-element title-underline"></div>
+        <div class="w-element solutions-grid">
+          <div class="w-element solution-card">
+            <span class="w-element solution-icon"
+              ><span class="w-element icon icon-megaphone"></span
+            ></span>
+            <div class="w-element">
+              <h3 class="w-element solution-title">
+                Branding &amp; Online Marketing
+              </h3>
+              <p class="w-element solution-description">
+                We craft distinctive brand identities that resonate with your
+                audience and stand out in the market. let us create Strategic
+                campaigns that amplify your brand and reach your target
+                audience.
+              </p>
+            </div>
+          </div>
+          <div class="w-element solution-card">
+            <span class="w-element solution-icon"
+              ><span class="w-element icon icon-laptop"></span
+            ></span>
+            <div class="w-element">
+              <h3 class="w-element solution-title">
+                Webdesign &amp; App Development
+              </h3>
+              <p class="w-element solution-description">
+                Beautiful, responsive websites and applications that engage
+                users and drive conversions.<br />We also develop Custom web
+                applications built with cutting-edge technology and best
+                practices.
+              </p>
+            </div>
+          </div>
+          <div class="w-element solution-card">
+            <span class="w-element solution-icon"
+              ><span class="w-element icon icon-briefcase"></span
+            ></span>
+            <div class="w-element">
+              <h3 class="w-element solution-title">Business Consultancy</h3>
+              <p class="w-element solution-description">
+                Strategic guidance and expert insights to optimize operations,
+                drive innovation, and achieve sustainable business growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="w-element c9pg7pn cta-section">
+        <div class="w-element cta-content">
+          <section id="contact" class="w-element contact-section">
+            <div class="w-element contact-container">
+              <h2 class="w-element contact-title">Get In Touch</h2>
+              <p class="w-element contact-description">
+                Have questions about our KYC solutions? Fill out the form below
+                and our team will get back to you within 24 hours.
+              </p>
+              <form class="w-element contact-form">
+                <div class="w-element form-group">
+                  <label for="name" class="w-element form-label"
+                    >Full Name</label
+                  ><input
+                    id="name"
+                    type="text"
+                    placeholder="John Doe"
+                    required=""
+                    class="w-element form-input"
+                  />
+                </div>
+                <div class="w-element form-group">
+                  <label for="email" class="w-element form-label"
+                    >Email Address</label
+                  ><input
+                    id="email"
+                    type="email"
+                    placeholder="john@company.com"
+                    required=""
+                    class="w-element form-input"
+                  />
+                </div>
+                <div class="w-element form-group">
+                  <label for="company" class="w-element form-label"
+                    >Company Name</label
+                  ><input
+                    id="company"
+                    type="text"
+                    placeholder="Your Company"
+                    class="w-element form-input"
+                  />
+                </div>
+                <div class="w-element form-group">
+                  <label for="message" class="w-element form-label"
+                    >Message</label
+                  ><textarea
+                    id="message"
+                    placeholder="Tell us about your needs..."
+                    required=""
+                    class="w-element form-textarea"
+                  ></textarea>
+                </div>
+                <button type="submit" class="w-element form-submit">
+                  SEND MESSAGE
+                </button>
+              </form>
+            </div>
+          </section>
+          <footer class="w-element">
+            <div class="w-element footer-content">
+              <div class="w-element logo">
+                <div class="w-element logo-bar"></div>
+                <span class="w-element"> VERIFY.</span>
+              </div>
+              <div class="w-element footer-links">
+                <a href="#" class="w-element">Privacy</a>
+                <a href="#" class="w-element">Terms</a>
+                <a href="#" class="w-element">Cookies</a>
+              </div>
+              <div class="w-element footer-copyright">
+                © 2024 Verify Solution Inc.
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
+    </main>
+    <script id="vike_pageContext" type="application/json">
+      {
+        "_urlRewrite": null,
+        "pageId": "/pages/index",
+        "routeParams": {},
+        "data": {
+          "url": "https://url/",
+          "system": {
+            "params": {},
+            "search": {},
+            "origin": "https://url",
+            "pathname": "/"
+          },
+          "resources": {},
+          "pageMeta": {
+            "title": "Home",
+            "description": "!undefined",
+            "excludePageFromSearch": "!undefined",
+            "language": "!undefined",
+            "socialImageAssetName": "!undefined",
+            "socialImageUrl": "!undefined",
+            "status": "!undefined",
+            "redirect": "!undefined",
+            "custom": []
+          }
+        }
+      }
+    </script>
+    <script id="vike_globalContext" type="application/json">
+      {}
+    </script>
+    <script
+      src="/assets/entries/entry-server-routing.BuX9QQFO.js"
+      type="module"
+      async
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/assets/entries/pages_index.BD8byEVS.js"
+      as="script"
+      type="text/javascript"
+    />
+  </body>
+</html>
